@@ -27,4 +27,7 @@ Rails.application.routes.draw do
     # saved articles are recalled for reading
     get '/library/read' => 'library#read'
 
+    # Adding comments here
+    # More comments
+
 end
