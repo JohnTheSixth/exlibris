@@ -1,0 +1,101 @@
+/* This CSS reset code was created by Bill Weinman of lynda.com and bw.org. */
+
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, ol, ul, li, blockquote, pre, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, section, summary, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+	font-family: 'Crimson Text', serif !important;
+	margin: 0 auto !important;
+	width: 100% !important;
+}
+
+/* End of Bill Weinman's code */
+
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, ol, ul, li, pre, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, section, summary, audio, video {
+	background-color: #F0F0F0 !important;
+	width: 100% !important;
+	font-size: 24px !important;
+	color: #302C22 !important;
+	text-align: left !important;
+}
+
+#urlDiv, #titleDiv, #authorDiv, #dateDiv, #contentDiv, #saveDiv {
+	width: 60% !important;
+	margin-bottom: 1.5em;
+}
+
+#saveDiv {
+	text-align: center !important;
+	margin: 0 auto !important;
+}
+
+h1 {
+	font-size: 1.5em !important;
+	line-height: 1em !important;
+}
+
+h2 {
+	font-size: 1.2em !important;
+	line-height: 1em !important;
+}
+
+img {
+	line-height: 1.5em !important;
+}
+
+p {
+	font-size: 24px !important;
+	text-align: left !important;
+	line-height: 1.5em !important;
+	margin-top: 1em !important;
+	margin-bottom: 1em !important;
+}
+
+blockquote {
+	border-left: 3px solid #302C22 !important;
+	padding-left: 10px;
+}
+
+blockquote, blockquote p {
+	font-size: 20px !important;
+	text-align: left !important;
+	line-height: 1.5em !important;
+	margin-top: 1em !important;
+	margin-left: 1em !important;
+	margin-bottom: 1em !important;
+}
+
+/* The code below styles the URL field and submit button */
+
+form {
+	text-align: center;
+	margin-top: 5%;
+}
+
+	#url-field {
+		display: inline-block;
+		vertical-align: middle;
+		margin: 0 auto;
+		font-size: 24px;
+		padding: 10px;
+		width: 65%;
+		font-family: 'Crimson Text', serif;
+	}
+
+	#url-submit {
+		display: inline-block;
+		vertical-align: middle;
+		margin: 0 auto;
+	}
+
+	#url-submit-img {
+		height: 38px;
+		width: 38px;
+		margin: 0 auto;
+		padding: 5px;
+	}
+
+/* -------------------------------------------------------------------------- */

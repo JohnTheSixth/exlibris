@@ -1,0 +1,13 @@
+<h2>Welcome<%= ", #{current_user.first_name}" if current_user %>. What would you like to read?</h2>
+
+<%= form_tag('/reader', method: 'post') do %>
+
+	<%= text_field_tag 'url-field', nil, name: 'read-url', placeholder: 'Paste URL here' %>
+		<!-- input type="text" id="url-field" name="read-url" placeholder="Paste URL here" /> -->
+	<%= button_tag(name: nil, type: 'submit', id: 'url-submit') do %>
+  		<%= image_tag('index/book.png', alt: nil, id: 'url-submit-img') %>
+  			<!-- <img id="url-submit-img" src="assets/images/index/book.png" /> -->
+	<% end %>
+		<!-- <button type="submit" id="url-submit"><img id="url-submit-img" src="assets/images/index/book.png" /></button> -->
+
+<% end %>
