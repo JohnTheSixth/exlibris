@@ -11,7 +11,7 @@ class UsersController < ApplicationController
 			session[:user_id] = @user.id
 			redirect_to '/reader'
 		else
-			flash[:danger] = @user.errors.full_messages
+			flash.now[:danger] = @user.errors.full_messages
 			render :new
 		end
 	end

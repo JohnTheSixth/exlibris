@@ -2,7 +2,7 @@ class HomeController < ApplicationController
 
 	before_filter :authorize
 
-	def login
+	def index
 	end
 
 end

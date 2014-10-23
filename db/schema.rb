@@ -11,7 +11,28 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141018151305) do
+ActiveRecord::Schema.define(version: 20141019045252) do
+
+  create_table "articles", force: true do |t|
+    t.string   "domain"
+    t.integer  "next_page_id"
+    t.string   "url"
+    t.string   "short_url"
+    t.string   "author"
+    t.string   "excerpt"
+    t.string   "direction"
+    t.integer  "word_count"
+    t.integer  "total_pages"
+    t.text     "content"
+    t.string   "date_published"
+    t.string   "dek"
+    t.string   "lead_image_url"
+    t.string   "title"
+    t.integer  "rendered_pages"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "user_id"
+  end
 
   create_table "users", force: true do |t|
     t.string   "first_name"

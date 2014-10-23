@@ -4,6 +4,6 @@ class User < ActiveRecord::Base
 
 	has_many :articles
 
-	validates_presence_of :first_name, :last_name, :email, :password, :password_confirmation
+	validates_presence_of :first_name, :last_name, :email, :password_confirmation
 
 end

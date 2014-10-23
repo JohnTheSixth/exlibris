@@ -1,40 +1,100 @@
 /* This CSS reset code was created by Bill Weinman of lynda.com and bw.org. */
 
-html, body, div, span, h1, h2, h3, h4, h5, h6, p, ol, ul, li,
-blockquote, pre, form, label, legend, table, caption, tbody, tfoot, thead,
-tr, th, td, article, aside, canvas, details, embed, figure, figcaption,
-footer, header, hgroup, menu, nav, output, section, summary, audio, video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, ol, ul, li, blockquote, pre,
+form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article,
+aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu,
+nav, output, section, summary, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
 	font-family: 'Crimson Text', serif;
 }
 
 /* End of Bill Weinman's code */
 
-body {
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, ol, ul, li, pre, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, output, section, summary, audio, video {
 	background-color: #F0F0F0;
+	font-size: 24px;
+	color: #302C22;
 }
 
-h2 {
+/* The following code styles the navigation bar and links. */
+
+#navDiv {
+	width: 100%;
+	background-color: rgba(48, 44, 34, 0.7);
+	margin: 0 auto;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+#navBar {
+	width: 80%;
+	margin: 0 auto;
+	font-size: 24px;
+	color: #E6E6E6;
+	text-align: right;
+}
+
+a.navLink:link, a.navLink:hover, a.navLink:visited, a.navLink:active {
+	text-decoration: none !important;	
+}
+
+a.navLink:link {
+	color: #E6E6E6 !important;
+}
+
+a.navLink:visited {
+	color: #E6E6E6 !important;
+}
+
+a.navLink:hover {
+	text-decoration: underline !important;
+	color: #FFFFFF !important;
+}
+
+a.navLink:active {
+	text-decoration: underline !important;
+	color: #302C22 !important;
+}
+
+/* The following code styles the flash messages. */
+
+.notice, .danger {
+	margin: 0 auto;
+	padding: 0;
+	width: 70%;
+	padding-top: 10px;
+	font-family: 'Crimson Text', serif;
+	font-size: 24px;
+ }
+
+.danger p {
+	color: rgb(255, 0, 0)
+ }
+
+.notice p {
+	color: rgb(50, 60, 170)
+}
+
+/* The following code styles all the body elements. */
+
+h1 {
 	margin: 0 auto;
 	padding: 0;
 	width: 100%;
 	font-size: 24px;
 	text-align: center;
-}
-
-h2 {
-	font-size: 2em;
+	font-size: 1.5em;
 	line-height: 1.5em;
 	margin-top: 5%;
 	color: #302C22;
 }
 
-/* The code below styles the URL field and submit button */
+/* The code below styles the URL field and submit button. */
 
 form {
 	text-align: center;
@@ -63,5 +123,26 @@ form {
 		margin: 0 auto;
 		padding: 5px;
 	}
+
+/* The following code styles the "Take me to my library" link. */
+
+#libLink:link, #libLink:visited, #libLink:hover, #liblink:active {
+	text-decoration: none;
+	color: #302C22;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 5px;
+}
+
+#libLink:hover {
+	background-color: #F8F8FF;
+	border: 2px solid #302C22;
+}
+
+#libLink:active {
+	background-color: #F8F8FF;
+	border: 2px solid #302C22;
+	color: #F8F8FF;
+}
 
 /* -------------------------------------------------------------------------- */

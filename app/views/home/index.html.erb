@@ -1,4 +1,4 @@
-<h2>Welcome. What would you like to read?</h2>
+<h1>Welcome<%= ", #{current_user.first_name}" if current_user %>. What would you like to read?</h1>
 
 <%= form_tag('/reader', method: 'post') do %>
 
@@ -11,3 +11,5 @@
 		<!-- <button type="submit" id="url-submit"><img id="url-submit-img" src="assets/images/index/book.png" /></button> -->
 
 <% end %>
+
+<h1><%= link_to "Take me to my library.", "/library", id: "libLink" %></h1>

@@ -4,30 +4,25 @@
   <title>Ex Libris</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href='http://fonts.googleapis.com/css?family=Crimson+Text' rel='stylesheet' type='text/css'>
-  <!-- Latest compiled and minified CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-
-  <!-- Optional theme -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= stylesheet_link_tag params[:controller], media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-    <!-- Latest compiled and minified JavaScript -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
   <%= csrf_meta_tags %>
 </head>
 <body>
 
-  <!-- Begin snippet for flash messages -->
-  <% flash.each do |key, value| %>
-    <div class='alert alert-<%= key %>' role='alert'>
-      <ul>
-        <% value.each do |msg| %>
-          <li><%= msg %></li>
-        <% end %>
-      </ul>
-    </div>
-  <% end %>
-  <!-- End snippet for flash messages -->
+<div id="navDiv">
+<nav id="navBar">
+    Create User | <%= link_to "Log In", login_path, class: 'navLink' %>
+</nav>
+</div>
+
+<% flash.each do |key, value| %>
+  <div class='<%= key %>'>
+    <% value.each do |msg| %>
+      <p><%= msg %></p>
+    <% end %>
+  </div>
+<% end %>
 
 <%= yield %>
 

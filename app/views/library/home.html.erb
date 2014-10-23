@@ -1,0 +1,24 @@
+<% if @articles.class == String %>
+	
+	<div class="myArticle">
+		<p id="noArticle"><%= @articles %></p>
+	</div>
+
+<% else %>
+
+	<h1>Here are all of your existing articles, <%= "#{current_user.first_name}" if current_user %>:</h1>
+
+	<% @articles.each do |a| %>
+
+	<div class="myArticle">
+		<p><%= link_to a.title, "/reader/#{a.id}", class: "title-link" %></p>
+		<% if a.dek != nil %>
+			<p class="article-excerpt"><%= raw a.dek %></p>
+		<% else %>
+			<p class="article-excerpt"><%= raw a.excerpt %></p>
+		<% end %>
+	</div>
+
+	<% end %>
+	
+<% end %>

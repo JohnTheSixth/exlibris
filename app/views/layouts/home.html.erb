@@ -10,6 +10,22 @@
 </head>
 <body>
 
+<div id="navDiv">
+<nav id="navBar">
+  <% if current_user %>
+    <%= link_to "Log Out", logout_path, class: 'navLink'%>
+  <% else %>
+    <%= link_to 'Login', login_path, class: 'navLink' %>
+  <% end %>
+</nav>
+</div>
+
+<% flash.each do |key, value| %>
+	<div class='<%= key %>'>
+		<p><%= value %></p>
+	</div>
+<% end %>
+
 <%= yield %>
 
 </body>

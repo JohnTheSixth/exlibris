@@ -14,7 +14,7 @@ html, body, div, span, h1, h2, h3, h4, h5, h6, p, ol, ul, li, blockquote, pre, f
 
 /* End of Bill Weinman's code */
 
-html, body, div, span, h1, h2, h3, h4, h5, h6, p, ol, ul, li, pre, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, section, summary, audio, video {
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, ol, ul, li, pre, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, output, section, summary, audio, video {
 	background-color: #F0F0F0 !important;
 	width: 100% !important;
 	font-size: 24px !important;
@@ -22,19 +22,76 @@ html, body, div, span, h1, h2, h3, h4, h5, h6, p, ol, ul, li, pre, form, label, 
 	text-align: left !important;
 }
 
+/* The following code sets the styles for the navigation links. */
+
+#navDiv {
+	width: 100% !important;
+	background-color: rgba(48, 44, 34, 0.7) !important;
+	margin: 0 auto !important;
+	padding-top: 5px !important;
+	padding-bottom: 5px !important;
+}
+
+#navBar {
+	width: 80% !important;
+	margin: 0 auto !important;
+	font-size: 24px !important;
+	color: #E6E6E6 !important;
+	text-align: right;
+}
+
+a.navLink:link, a.navLink:hover, a.navLink:visited, a.navLink:active {
+	text-decoration: none !important;	
+}
+
+a.navLink:link {
+	color: #E6E6E6 !important;
+}
+
+a.navLink:visited {
+	color: #E6E6E6 !important;
+}
+
+a.navLink:hover {
+	text-decoration: underline !important;
+	color: #FFFFFF !important;
+}
+
+a.navLink:active {
+	text-decoration: underline !important;
+	color: #302C22 !important;
+}
+
+/* The following code styles the flash messages. */
+
+.notice, .danger {
+	margin: 0 auto !important;
+	padding: 0 !important;
+	width: 60% !important;
+	padding-top: 10px !important;
+	font-family: 'Crimson Text', serif !important;
+	font-size: 24px !important;
+ }
+
+.danger p {
+	color: rgb(255, 0, 0) !important;
+ }
+
+.notice p {
+	color: rgb(50, 60, 170) !important;
+}
+
+/* The following code styles the content pulled from the web articles. */
+
 #urlDiv, #titleDiv, #authorDiv, #dateDiv, #contentDiv, #saveDiv {
 	width: 60% !important;
-	margin-bottom: 1.5em;
+	margin-bottom: 1.5em !important;
 }
 
-#saveDiv {
-	text-align: center !important;
-	margin: 0 auto !important;
-}
-
-h1 {
+h1, #titleDiv {
 	font-size: 1.5em !important;
 	line-height: 1em !important;
+	font-weight: bold;
 }
 
 h2 {
@@ -68,34 +125,80 @@ blockquote, blockquote p {
 	margin-bottom: 1em !important;
 }
 
-/* The code below styles the URL field and submit button */
-
-form {
-	text-align: center;
-	margin-top: 5%;
+a {
+	text-decoration: underline;
 }
 
-	#url-field {
-		display: inline-block;
-		vertical-align: middle;
-		margin: 0 auto;
-		font-size: 24px;
-		padding: 10px;
-		width: 65%;
-		font-family: 'Crimson Text', serif;
-	}
+a:link {
+	color: rgb(50, 60, 170);
+}
 
-	#url-submit {
-		display: inline-block;
-		vertical-align: middle;
-		margin: 0 auto;
-	}
+a:visited {
+	color: rgb(170, 60, 50);
+}
 
-	#url-submit-img {
-		height: 38px;
-		width: 38px;
-		margin: 0 auto;
-		padding: 5px;
-	}
+a:hover {
+	color: rgb(255, 0, 0);
+}
+
+a:active {
+	color: rgb(240, 240, 240);
+}
+
+/* The code below styles the "Save" and "Delete" buttons */
+
+#saveDiv {
+	display: inline-block !important;
+	width: 100% !important;
+	margin: 0 auto !important;
+	padding: 0 !important;
+	text-align: center !important;
+	margin-bottom: 5% !important;
+}
+
+#saveForm, #deleteForm {
+	display: inline-block !important;
+	margin: 0 auto !important;
+	padding: 0px !important;
+	width: 20% !important;
+	text-align: center !important;
+}
+
+#saveButton, #deleteButton {
+	display: inline-block !important;
+	margin: 5px auto !important;
+	padding-left: 10px;
+	padding-right: 10px;
+	font-family: 'Crimson Text', serif;
+	font-size: 24px;
+	border: 1px solid #302C22;
+	background: #F8F8FF;
+	color: #302C22;
+}
+
+#saveButton:hover, #deleteButton:hover {
+	border: 2px solid #302C22;
+    background: #F8F8FF;
+    margin: -1px !important;
+}
+
+/*input[type=submit] {
+	display: inline-block !important;
+	margin: 0 auto !important;
+	border: 1px solid #302C22;
+    color: #302C22;
+    background: #F0F0F0;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 5px;
+	font-family: 'Crimson Text', serif;
+	font-size: 24px;
+}
+
+input[type=submit]:hover {
+    border: 2px solid #302C22;
+    background: #F8F8FF;
+    margin: -1px;
+}*/
 
 /* -------------------------------------------------------------------------- */

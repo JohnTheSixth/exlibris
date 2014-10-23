@@ -1,12 +1,19 @@
+<div class="loginMessage">
 <p>Create your account here:</p>
+</div>
+
+<div class="loginForm">
 <%= form_for @user, url: '/newuser', method: 'post' do |f| %>
 
-	<p>First Name: <%= f.text_field :first_name %></p>
-	<p>Last Name: <%= f.text_field :last_name %></p>
-	<p>Email: <%= f.text_field :email %></p>
-	<p>Password: <%= f.password_field :password %></p>
-	<p>Password Confirmation: <%= f.password_field :password_confirmation %></p>
-
+	<p><%= f.text_field :first_name, class: 'form-text-field', placeholder: 'First Name' %> <%= f.text_field :last_name, class: 'form-text-field', placeholder: 'Last Name' %></p>
+	<br>
+	<p><%= f.text_field :email, class: 'form-text-field', placeholder: 'Email' %></p>
+	<br>
+	<p><%= f.password_field :password, class: 'form-text-field', placeholder: 'Password' %></p>
+	<br>
+	<p><%= f.password_field :password_confirmation, class: 'form-text-field', placeholder: 'Confirm Password' %></p>
+	<br>
 	<p><%= f.submit 'Create your account' %></p>
 
 <% end %>
+</div>

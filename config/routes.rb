@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-    root 'reader#index'
+    root 'home#index'
 
     get '/newuser' => 'users#new'
     post '/newuser' => 'users#create'
@@ -10,14 +10,11 @@ Rails.application.routes.draw do
 
     get '/logout' => 'sessions#destroy'
 
-    get '/reader' => 'reader#index'
+    get '/reader' => 'home#index'
     post '/reader' => 'reader#parse'
 
-    get '/save' => 'reader#save'
     post '/save' => 'reader#save'
-
-
-    get '/delete' => 'reader#delete'
+    post '/delete' => 'reader#delete'
 
     # Goes to Library home where all saved
     # articles are available for viewing
@@ -25,7 +22,7 @@ Rails.application.routes.draw do
 
     # Goes to reading page in library where
     # saved articles are recalled for reading
-    get '/library/read' => 'library#read'
+    get '/reader/:id' => 'reader#checkout'
 
     # Adding comments here
     # More comments

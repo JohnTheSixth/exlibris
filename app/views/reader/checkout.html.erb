@@ -12,7 +12,7 @@
 
 <%= form_tag('/save', method: 'post', id: 'saveForm') do %>
     <%= hidden_field_tag 'url', @article.url %>
-	<%= button_tag(name: nil, type: 'submit', id: 'saveButton') do %>Save this article<% end %>
+    <%= button_tag(name: nil, type: 'submit', id: 'saveButton') do %>Save this article<% end %>
 <% end %>
 
 <%= form_tag('/delete', method: 'post', id: 'deleteForm') do %>

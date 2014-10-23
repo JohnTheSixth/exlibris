@@ -1,9 +1,17 @@
-<p>Log in here:</p>
-<%= form_tag '/login' do %>
-	<p>Email: <%= text_field_tag :email %></p>
-	<p>Password: <%= password_field_tag :password %></p>
-	<p>Confirm Password: <%= text_field_tag :email %></p>
-	<p><%= submit_tag "Login" %></p>
-<% end %>
+<div id="loginMessage">
+<p>Welcome to Ex Libris - your reading room for the web!</p>
+</div>
 
+<div id="loginForm">
+<%= form_tag '/login' do %>
+	<p class="formParagraph"><%= text_field_tag :email, nil, class: 'form-text-field', placeholder: 'Email' %></p>
+	<br>
+	<p class="formParagraph"><%= password_field_tag :password, nil, class: 'form-text-field', placeholder: 'Password' %></p>
+	<br>
+	<p class="formParagraph"><%= submit_tag "Login" %></p>
+<% end %>
+</div>
+
+<div id="createMessage">
 <p>If you don't have an account, <%= link_to 'create one here', '/newuser' %>.</p>
+</div>
