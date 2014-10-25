@@ -103,6 +103,13 @@ img {
 	line-height: 1.5em !important;
 }
 
+.caption-text {
+	font-size: 20px !important;
+	font-style: italic !important;
+	line-height: 1em !important;
+	margin-bottom: 1em !important;
+}
+
 p {
 	font-size: 24px !important;
 	text-align: left !important;
@@ -123,6 +130,20 @@ blockquote, blockquote p {
 	margin-top: 1em !important;
 	margin-left: 1em !important;
 	margin-bottom: 1em !important;
+}
+
+blockquote pre {
+	background-color: #CCCCCC !important;
+	color: #302C22 !important;
+	font-family: monospace !important;
+	font-size: 20px !important;
+}
+
+code {
+	background-color: #CCCCCC !important;
+	color: #302C22 !important;
+	font-family: monospace !important;
+	font-size: 20px !important;
 }
 
 a {
