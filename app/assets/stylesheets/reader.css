@@ -164,6 +164,10 @@ a:active {
 	text-align: center !important;
 }
 
+#saveButton:focus, #deleteButton:focus {
+	outline: none !important;
+}
+
 #saveButton, #deleteButton {
 	display: inline-block !important;
 	margin: 5px auto !important;
@@ -180,6 +184,13 @@ a:active {
 	border: 2px solid #302C22;
     background: #F8F8FF;
     margin: -1px !important;
+}
+
+#saveButton:active, #deleteButton:active {
+	background: #F8F8FF;
+	border: 2px solid #302C22;
+	color: #F8F8FF;
+	margin: -1px !important;
 }
 
 /* -------------------------------------------------------------------------- */

@@ -138,6 +138,17 @@ input[type=submit]:hover {
     margin: -1px;
 }
 
+input[type=submit]:active {
+    border: 2px solid #302C22;
+    background: #F8F8FF;
+    margin: -1px;
+    color: #F8F8FF;
+}
+
+input:focus {
+	outline: none;
+}
+
 /* ---------- */
 
 a {

@@ -4,6 +4,7 @@ Rails.application.routes.draw do
 
     get '/newuser' => 'users#new'
     post '/newuser' => 'users#create'
+    get '/credits' => 'users#credits'
 
     get '/login' => 'sessions#new'
     post '/login' => 'sessions#create'
