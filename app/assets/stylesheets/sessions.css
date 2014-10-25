@@ -82,14 +82,14 @@ a.navLink:active {
 
 /* -------------------------------------------------------------------------- */
 
-#loginMessage {
+.loginMessage {
 	margin: 0 auto;
 	padding: 0;
 	width: 60%;
 	margin-top: 5%;
 }
 
-#loginForm {
+.loginForm {
 	margin: 0 auto;
 	padding: 0;
 	width: 60%;
@@ -97,7 +97,7 @@ a.navLink:active {
 	margin-bottom: 2%;
 }
 
-#createMessage {
+.createMessage {
 	margin: 0 auto;
 	padding: 0;
 	width: 60%;

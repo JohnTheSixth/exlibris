@@ -1,8 +1,8 @@
-<div id="loginMessage">
+<div class="loginMessage">
 <p>Welcome to Ex Libris - your reading room for the web!</p>
 </div>
 
-<div id="loginForm">
+<div class="loginForm">
 <%= form_tag '/login' do %>
 	<p class="formParagraph"><%= text_field_tag :email, nil, class: 'form-text-field', placeholder: 'Email' %></p>
 	<br>
@@ -12,6 +12,6 @@
 <% end %>
 </div>
 
-<div id="createMessage">
+<div class="createMessage">
 <p>If you don't have an account, <%= link_to 'create one here', '/newuser' %>.</p>
 </div>

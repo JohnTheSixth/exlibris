@@ -5,6 +5,7 @@ class UsersController < ApplicationController
 	end
 
 	def create
+
 		@user = User.create(user_params)
 
 		if @user.save
@@ -14,6 +15,24 @@ class UsersController < ApplicationController
 			flash.now[:danger] = @user.errors.full_messages
 			render :new
 		end
+		
+	end
+
+	def delete
+	end
+
+	def destroy # Destroys the user and the user's articles from the database
+		
+		if Article.destroy_all(user_id: params[:id])
+			User.destroy_all(id: params[:id])
+			flash[:success] = "You have successfully deleted your account."
+			session[:user_id] = nil
+			redirect_to login_path
+		else
+			flash[:danger] = "Your account was not deleted."
+			render :delete
+		end
+
 	end
 
 private

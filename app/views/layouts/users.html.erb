@@ -12,7 +12,11 @@
 
 <div id="navDiv">
 <nav id="navBar">
+  <% if current_user %>
+    <%= link_to 'Library', '/library', class: 'navLink' %> | <%= link_to 'Home', '/', class: 'navLink' %>
+  <% else %>
     Create User | <%= link_to "Log In", login_path, class: 'navLink' %>
+  <% end %>
 </nav>
 </div>
 

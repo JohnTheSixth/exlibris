@@ -24,7 +24,9 @@ Rails.application.routes.draw do
     # saved articles are recalled for reading
     get '/reader/:id' => 'reader#checkout'
 
-    # Adding comments here
-    # More comments
+    get '/account' => 'users#manage'
+
+    get '/deleteuser' => 'users#delete'
+    get '/destroy/:id' => 'users#destroy'
 
 end
